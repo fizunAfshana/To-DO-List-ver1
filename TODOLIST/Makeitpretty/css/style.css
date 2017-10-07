@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+
+body,input,button{
+	font-family: 'Trebuchet MS', serif;
+}
+
+body{
+	background: #edf0f1;
+	padding: 65px;
+}
+
+h3{
+  	margin: auto;
+	text-align: center;
+  	font-size:25px;
+  	color: Grey;
+}
+
+header{
+	width:95%;
+	height:65px;
+	padding:15px;
+	z-index:5;
+	background:#25b99a;
+	box-shadow: 8px 2px 4px rgba(44,62,80,0.15);
+	border-radius: 10px;
+    margin: auto;
+}
+
+header input {
+	width:87%;
+	height:50px;
+	padding: 5px;
+	float:left;
+	font-size: 20px;
+	font-weight: 400;
+	text-indent: 18px;
+  	background:#8CE3D2;
+  	border-radius: 10px;
+    border:0px;
+    margin: auto;
+}
+
+header button{
+      width:10%;
+      height:90%;
+      background:#8CE3D2;
+      float: right;
+      top:15px;
+      right:15px;
+      font-size: 20px;
+	  font-weight: 400;
+	  color: grey;
+      text-align: center;
+	  border-radius: 10px;
+	  border:10px;
+	  margin: auto;
+	  cursor: pointer;
+}
+
+header button:hover{
+	color: black;
+}
+
+.del_btn{
+	padding: 13px;
+	float:left;
+	font-weight: 400;
+  	background:#8CE3D2;
+  	border-radius: 10px;
+    border:0px;
+    margin-left: 2%;
+    outline:none;
+}
+
+.container{
+  	width: 97%;
+   	float: left;
+  	padding:15px;
+	width:95%;
+}
+
+.container{
+	border-radius: 10px;
+}
+
+ul {
+	width:100%;
+	float:left;
+	padding:0px;
+	margin-left: auto;
+	list-style-type: none;
+	text-transform: capitalize;
+  	border-radius: 10px;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+    background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+.checked{
+	text-decoration: line-through;
+	font-weight: bold;
+	color:#058e5a;
+
+}
+
+/* Style the close button */
+button {
+	float:right;
+	background: #8CE3D2;
+	border-left-style: solid;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+button: hover{
+	color: grey;
+}
+
+.editItem {
+	float:right;
+}

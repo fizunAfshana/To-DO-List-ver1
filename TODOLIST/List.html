@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>
+
+<!-- CSS link-->
+<link rel="stylesheet" type="text/css" href="E:\School stuffs\TODOLIST\Makeitpretty\css\style.css">
+
+</head>
+
+<body>
+
+	<h3> To-Do List </h3>
+
+	<header>
+
+		<!-- Taking the input from the user to add to the list-->
+        <input type="text" id="ItemText" placeholder="Enter an activity..."/>
+        <button id="add" type="button"> Add</button>
+
+	</header>
+
+
+	<div class="container">
+		<!-- Uncompleted tasks -->
+		<ul id="todoList" />
+	</div>
+
+	<!-- Delete button -->
+	<button id="deleteAcc" class="del_btn" type="button" onclick = "delBoxes();">Delete</button>
+
+<!--Script to interaction-->
+<script src="E:\School stuffs\TODOLIST\Makeitpretty\js\main.js"></script>
+
+</body>
+</html>
