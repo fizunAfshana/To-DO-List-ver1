@@ -65,13 +65,13 @@ header button:hover{
 
 .del_btn{
 	padding: 13px;
-	float:left;
+	float:right;
 	font-weight: 400;
-  	background:#8CE3D2;
-  	border-radius: 10px;
-    border:0px;
-    margin-left: 2%;
-    outline:none;
+  background:#8CE3D2;
+  border-radius: 10px;
+  border:0px;
+  margin-left: 2%;
+  outline:none;
 }
 
 .container{
@@ -112,7 +112,16 @@ ul li:hover {
 	color:#058e5a;
 
 }
+ul li #Ed{
+	float:right;
+	border:1px;
+}
 
+ul li #del{
+float: right;
+border: 1px;
+
+}
 /* Style the close button */
 button {
 	float:right;
@@ -124,8 +133,4 @@ button {
 
 button: hover{
 	color: grey;
-}
-
-.editItem {
-	float:right;
 }

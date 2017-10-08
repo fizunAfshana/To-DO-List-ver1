@@ -36,7 +36,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
     	document.getElementById("deleteAcc").disabled = true;
 }, false );
 
-// This function will delete selected item from list
+// This function will delete selected item from list (Multiple removal selected items from the list)
 function delBoxes(){
 
 	var list = document.getElementById('todoList'),
@@ -97,16 +97,20 @@ function addItem(list, itemText){
 
 // Edit list
 	var edit = document.createElement("a");
+	edit.id="Ed";
 	 edit.href = "#";
-	 edit.innerHTML = " Edit |";
+	 edit.innerHTML = " Edit";
 	 edit.addEventListener('click', editItem, false);
 
 // Delete list item
 	 var deleteBtn = document.createElement("a");
+	  deleteBtn.id= "del";
     deleteBtn.href = "#";
-    deleteBtn.innerHTML = " delete";
+    deleteBtn.innerHTML = " Delete|";
     deleteBtn.addEventListener('click', removeItem, false);
 
+
+// appending to the HTML
 	listActivity.appendChild(checkBox);
 	listActivity.appendChild(span);
 	listActivity.appendChild(edit);
@@ -118,13 +122,13 @@ function addItem(list, itemText){
 }
 
 var total=0;
-var updatedItemFromEdit = '';
+var updatedEdit = '';
 function editItem() {
 	btn.innerHTML = 'EDIT';
 	var li = this.parentNode;
 	var item = li.getElementsByTagName("*");
 	ItemText.value = item[1].innerHTML;
-	updatedItemFromEdit = item[1].id;
+	updatedEdit = item[1].id;
 	console.log(item);
 		 }
  function removeItem() {
